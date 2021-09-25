@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+ <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceContainer name="content">
+            <block 
+             name="AgSoftware_Magento_NameBlock" template="AgSoftware_Magento::block.phtml" before="-"/>
+             <block 
+             name="AgSoftware_Magento_NameBlock2" template="AgSoftware_Magento::block2.phtml" />
+             <move 
+             element="AgSoftware_Magento_NameBlock" destination="product.info.main" after="-"/>
+        </referenceContainer>
+        <!-- <referenceContainer name="product.info.media" remove="true"/>-->
+        <!-- <referenceBlock name="product.info.media.image" remove="true"/>-->
+    </body>
+    
+ </page>
